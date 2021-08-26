@@ -16,13 +16,13 @@ type authController struct {
 	// this is where you put your service
 }
 
-func (a authController) Login(ctx *gin.Context) {
+func (a *authController) Login(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H{
 		"message":"hello login",
 	})
 }
 
-func (a authController) Register(ctx *gin.Context) {
+func (a *authController) Register(ctx *gin.Context) {
 	ctx.JSON(http.StatusOK, gin.H{
 		"message":"hello register",
 	})
